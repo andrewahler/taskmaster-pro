@@ -72,12 +72,13 @@ $(".list-group").on("blur", "textarea", function() {
 
     // replace textarea with p element
     $(this).replaceWith(taskP);
-});
-var textInput = $("<textarea>")
+    var textInput = $("<textarea>")
     .addClass("form-control")
     .val(text);
 $(this).replaceWith(textInput);
 textInput.trigger("focus");
+});
+
 
 // modal was triggered
 $("#task-form-modal").on("show.bs.modal", function() {
